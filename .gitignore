@@ -1,0 +1,6 @@
+cache/cache.db
+index/faiss_index.bin
+.env
+
+.idea/
+__pycache__/

@@ -1,0 +1,13 @@
+faiss-cpu
+langchain
+openai
+llama-index
+pymupdf
+flask
+python-dotenv
+numpy
+fastapi
+uvicorn
+llama-cpp-python
+langchain-community
+sentence-transformers
