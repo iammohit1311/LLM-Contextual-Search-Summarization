@@ -1,20 +1,3 @@
-# import sqlite3
-# from config import CACHE_DB_PATH
-#
-# conn = sqlite3.connect(CACHE_DB_PATH)
-# c = conn.cursor()
-# c.execute("CREATE TABLE IF NOT EXISTS cache (query TEXT PRIMARY KEY, response TEXT)")
-# conn.commit()
-#
-# def get_cached_response(query):
-#     c.execute("SELECT response FROM cache WHERE query = ?", (query,))
-#     row = c.fetchone()
-#     return row[0] if row else None
-#
-# def cache_response(query, response):
-#     c.execute("INSERT INTO cache VALUES (?, ?)", (query, response))
-#     conn.commit()
-
 import sqlite3
 from config import CACHE_DB_PATH
 

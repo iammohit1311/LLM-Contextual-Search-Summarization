@@ -23,9 +23,16 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # PDF_DIR = "data/"
 PDF_DIR = os.path.join(BASE_DIR, "data")
 
+FAISS_INDEX_DIR = os.path.join(BASE_DIR, "index")
 FAISS_INDEX_PATH = os.path.join(BASE_DIR, "index", "faiss_index.bin")
 
+CACHE_DIR = os.path.join(BASE_DIR, "cache")
 CACHE_DB_PATH = os.path.join(BASE_DIR, "cache", "cache.db")
+
+# Ensure Required Directories Exist
+os.makedirs(PDF_DIR, exist_ok=True)
+os.makedirs(FAISS_INDEX_DIR, exist_ok=True)
+os.makedirs(CACHE_DIR, exist_ok=True)
 
 # Llama Model
 LLAMA_MODEL = "llama3"  # Llama 3 via Ollama IGNORE
